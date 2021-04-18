@@ -26,6 +26,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Iteration 1
+gem 'bootstrap', '~> 5.0.0.beta2'
+gem 'friendly_id', '~> 5.4.0'
+
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
