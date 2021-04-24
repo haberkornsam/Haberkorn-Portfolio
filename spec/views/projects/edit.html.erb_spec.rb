@@ -21,7 +21,6 @@ RSpec.describe "projects/edit", type: :view do
 
       assert_select "textarea[name=?]", "project[description]"
 
-      assert_select "input[name=?]", "project[slug]"
     end
   end
 end

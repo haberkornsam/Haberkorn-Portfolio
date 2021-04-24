@@ -6,14 +6,12 @@ RSpec.describe "projects/index", type: :view do
       Project.create!(
         :title => "Title",
         :body => "MyText",
-        :description => "MyText",
-        :slug => "Slug"
+        :description => "MyTexts"
       ),
       Project.create!(
         :title => "Title",
         :body => "MyText",
-        :description => "MyText",
-        :slug => "Slug"
+        :description => "MyTexts"
       )
     ])
   end
@@ -22,7 +20,6 @@ RSpec.describe "projects/index", type: :view do
     render
     assert_select "tr>td", :text => "Title".to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
-    assert_select "tr>td", :text => "MyText".to_s, :count => 2
-    assert_select "tr>td", :text => "Slug".to_s, :count => 2
+    assert_select "tr>td", :text => "MyTexts".to_s, :count => 2
   end
 end

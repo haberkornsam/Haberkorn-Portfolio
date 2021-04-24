@@ -5,8 +5,7 @@ RSpec.describe "projects/new", type: :view do
     assign(:project, Project.new(
       :title => "MyString",
       :body => "MyText",
-      :description => "MyText",
-      :slug => "MyString"
+      :description => "MyText"
     ))
   end
 
@@ -20,8 +19,6 @@ RSpec.describe "projects/new", type: :view do
       assert_select "textarea[name=?]", "project[body]"
 
       assert_select "textarea[name=?]", "project[description]"
-
-      assert_select "input[name=?]", "project[slug]"
     end
   end
 end
