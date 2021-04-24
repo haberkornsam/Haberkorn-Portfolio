@@ -1,6 +1,6 @@
-class CreatePosts < ActiveRecord::Migration[5.2]
+class CreateProjects < ActiveRecord::Migration[5.2]
   def change
-    create_table :posts do |t|
+    create_table :projects do |t|
       t.string :title
       t.text :body
       t.text :description
@@ -8,6 +8,6 @@ class CreatePosts < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    add_index :posts, :slug, unique: true
+    add_index :projects, :slug, unique: true
   end
 end
