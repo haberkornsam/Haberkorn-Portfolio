@@ -10,3 +10,12 @@ before_install:
 
 script:
  - bundle exec rspec
+
+
+deploy:
+ provider: heroku
+ api_key: a9bb9a84-4610-48ad-9504-aef8639a81bb
+ app: warm-earth-71475
+ run: "rake db:migrate"
+ on:
+  all_branches: true
