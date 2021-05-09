@@ -1,4 +1,5 @@
 # README
+[![Build Status](https://travis-ci.com/haberkornsam/Haberkorn-Portfolio.svg?branch=main)](https://travis-ci.com/haberkornsam/Haberkorn-Portfolio)
 [![codecov](https://codecov.io/gh/haberkornsam/Haberkorn-Portfolio/branch/main/graph/badge.svg?token=0N9HQAW6MR)](https://codecov.io/gh/haberkornsam/Haberkorn-Portfolio)
 
 
