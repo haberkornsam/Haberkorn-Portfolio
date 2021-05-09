@@ -39,6 +39,7 @@ RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
   config.include Devise::Test::ControllerHelpers, :type => :controller
+  config.include Devise::Test::ControllerHelpers, :type => :view
   config.include Devise::Test::IntegrationHelpers, type: :request
   config.extend ControllerMacros, :type => :controller
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
@@ -71,5 +72,8 @@ require 'simplecov'
 SimpleCov.start 'rails' do
   add_filter '/bin/'
   add_filter '/db/'
-  add_filter '/spec/' # for rspec
+  add_filter '/spec/'
+  add_filter do |source_file|
+    source_file.lines.count < 5
+  end
 end

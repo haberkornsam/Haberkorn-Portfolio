@@ -15,6 +15,5 @@ RSpec.describe "projects/show", type: :view do
     expect(rendered).to match(/Title/)
     expect(rendered).to match(/MyText/)
     expect(rendered).to match(/MyText/)
-    expect(rendered).to match(/Slug/)
   end
 end

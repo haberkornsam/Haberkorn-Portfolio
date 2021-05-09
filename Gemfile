@@ -27,8 +27,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Iteration 1
-gem 'bootstrap', '~> 5.0.0.beta2'
+gem 'bootstrap', '~> 4.6.0'
 gem 'friendly_id', '~> 5.4.0'
+gem 'sprockets-rails'
+gem 'jquery-rails'
 
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
