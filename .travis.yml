@@ -16,6 +16,6 @@ deploy:
  provider: heroku
  api_key: dd833edc-e6b2-43a0-9a6a-fc12011bb436
  app: calm-plateau-14847
- run heroku: "rake db:migrate"
+ run: "rake db:migrate"
  on:
   all_branches: true
