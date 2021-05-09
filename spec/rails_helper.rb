@@ -76,4 +76,6 @@ SimpleCov.start 'rails' do
   add_filter do |source_file|
     source_file.lines.count < 5
   end
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end

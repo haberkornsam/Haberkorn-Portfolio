@@ -1,4 +1,6 @@
 # README
+[![codecov](https://codecov.io/gh/haberkornsam/Haberkorn-Portfolio/branch/main/graph/badge.svg?token=0N9HQAW6MR)](https://codecov.io/gh/haberkornsam/Haberkorn-Portfolio)
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
